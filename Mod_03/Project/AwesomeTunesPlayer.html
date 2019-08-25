@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      h1{
+        border-style: solid;
+        padding: 50px;
+        text-align: center;
+        margin-top: 0px;
+      }
+
+      body {
+        background-color: #323127;
+        color: #D3A626;
+      }
+
+      h2{
+        text-align: center;
+        border-style: solid;
+        background-color: #D3A626;
+        color: #323127;
+      }
+
+      .img-thumbnail{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+
+      .MediaPlayer {
+        width: 100%;
+        height: auto;
+      }
+
+
+
+    </style>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-2">
+      <img src="MusicPlayer.jpg" class="img-responsive" alt="AwesomeTunes" height="200" >
+    </div>
+
+
+      <div class="col-md-10">
+        <img src="MusicIsLife.jpg" alt="MusicLife" width="100%" height="250" >
+      </div>
+  </div>
+
+  <div class="row">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="AwesomeTunesHome.html">AwesomeTunes</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="AwesomeTunesLogin.html">Login</a></li>
+          <li><a href="AwesomeTunesPlayer.html">Music Player</a></li>
+          <li><a href="AwesomeTunesProfile.html">Profile</a></li>
+        </ul>
+        <form class="navbar-form navbar-left" action="/action_page.php">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-md-6">
+      <img src="MediaPlayer.jpg" class="MediaPlayer" alt="MediaPlayer">
+    </div>
+    <div class="col-md-6">
+      <table class="table table-condensed table-striped table-bordered" style="width:100%">
+  <tr>
+    <th>Song</th>
+    <th>Artist</th>
+    <th>Album</th>
+  </tr>
+  <tr>
+    <td>Feel Good Inc.</td>
+    <td>Gorillaz</td>
+    <td>Demon Dayz</td>
+  </tr>
+  <tr>
+    <td>Dance, Dance</td>
+    <td>Fallout Boy</td>
+    <td>From Under the Cork Tree</td>
+  </tr>
+  <tr>
+    <td>Bulls On Parade</td>
+    <td>Rage Against the Machine</td>
+    <td>Evil Empire</td>
+  </tr>
+</table>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
