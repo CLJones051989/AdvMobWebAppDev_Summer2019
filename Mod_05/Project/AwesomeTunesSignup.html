@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      h1{
+        border-style: solid;
+        padding: 50px;
+        text-align: center;
+        margin-top: 0px;
+      }
+
+      body {
+        background-color: #323127;
+        color: #D3A626;
+      }
+
+
+      h2{
+        text-align: center;
+        background-color: #D3A626;
+        color: #323127;
+      }
+
+      form{
+        border-style: solid;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #D3A626;
+        color: #323127;
+      }
+
+
+    </style>
+</head>
+<body>
+    <div class="row">
+      <div class="col-md-2">
+        <img src="MusicPlayer.jpg" class="img-responsive" alt="AwesomeTunes" height="200" >
+      </div>
+      <div class="col-md-10">
+        <img src="MusicIsLife.jpg" alt="MusicLife" width="100%" height="250" >
+      </div>
+    </div>
+
+    <div class="row">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="AwesomeTunesHome.html">AwesomeTunes</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="AwesomeTunesLogin.html">Login</a></li>
+            <li><a href="AwesomeTunesPlayer.html">Music Player</a></li>
+            <li><a href="AwesomeTunesProfile.html">Profile</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Settings <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Options</a></li>
+                  <li><a href="#">Audio Settings</a></li>
+                  <li><a href="AwesomeTunesLogin.html">Logout</a></li>
+                </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" action="/action_page.php">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <div class="col-md-3"></div>
+
+    <div class="col-md-6 mb-3">
+      <h2>Sign up here!</h2>
+      <form>
+      <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="validation01">First name</label>
+            <input type="text" class="form-control" id="validation01" placeholder="First name" required>
+          </div>
+          <div class="col-md-12 mb-3">
+            <label for="validation02">Last name</label>
+            <input type="text" class="form-control" id="validation02" placeholder="Last name"  required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="validation03">email</label>
+            <input type="text" class="form-control" id="validation03" placeholder="email" required>
+            <div class="invalid-feedback">
+              This field is required.
+            </div>
+          </div>
+        <div class="col-md-12 mb-3">
+          <label for="validation04">Username</label>
+          <input type="text" class="form-control" id="validation04" placeholder="Username" required>
+          <div class="invalid-feedback">
+            This field is required.
+          </div>
+        </div>
+        <div class="col-md-12 mb-3">
+          <label for="validation05">Password</label>
+          <input type="text" class="form-control" id="validation05" placeholder="Password" required>
+          <div class="invalid-feedback">
+            This field is required.
+          </div>
+        </div>
+        <div class="col-md-12 mb-3">
+          <label for="validation05">Password Confirm</label>
+          <input type="text" class="form-control" id="validation05" placeholder="Password Confirm" required>
+          <div class="invalid-feedback">
+            This field is required.
+          </div>
+        </div>
+      </div>
+
+      <p></p></br>
+
+      <div class="form-group">
+      <label for="comment">Write a short bio!</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+
+
+      <div class="radio">
+        <p>Gender</p></br>
+        <label><input type="radio" name="optradio">Male</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="optradio">Female</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="optradio">Other</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="optradio">Prefer not to say</label>
+      </div>
+
+
+      <p></p>
+
+
+      <div class="checkbox">
+        <p>Choose your AwesomeTunes audio package.</p></br>
+        <label><input type="checkbox" value="">Basic ----> $0.00/month</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" value="">Standard ----> $4.99/month</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" value="">Premium ----> $9.99/month</label>
+      </div>
+
+      <div class="form-group">
+        <label for="select1">Country:</label>
+        <select class="form-control" id="select1">
+          <option>-- Choose your country! --</option>
+          <option>United States</option>
+          <option>United Kingdom</option>
+          <option>Canada</option>
+          <option>Japan</option>
+          <option>Italy</option>
+          <option>Mexico</option>
+        </select>
+      </div>
+
+      <button class="btn" type="submit">Submit</button>
+      </form>
+    </div>
+
+
+</body>
